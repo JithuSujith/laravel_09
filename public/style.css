@@ -18,5 +18,56 @@
 }
 
 .pagesize{
-    min-height: 100vh;
+    min-height: 75vh;
+}
+
+.homeB{
+    background-color: rgb(8, 75, 8);
+    padding: 0;
+    margin: 0;
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.herosection2 {
+    min-height: 70vh;
+    width: 100%;
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+        ),
+        url('images/tomulus64-prunus-cerasifera-10226959_1920.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.backg3{
+    min-height: 70vh;
+    width: 100%;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+        ),
+        url('images/pexels-lukasz-szabo-1178620274-30054855.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    margin: 0;
+    padding: 0;
 }

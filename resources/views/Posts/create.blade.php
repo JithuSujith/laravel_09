@@ -1,4 +1,13 @@
 <x-layout>
+    <header>
+        <div class="conatiner-fluid p-0">
+        <div class="row">
+            <div class="col-12 col-md-12 d-flex align-items-center  text-white herosection2">
+            <h1 class="fw-bold fs-1 ps-5">Create your post by sharing your Quotes</h1>
+            </div>
+        </div>
+       </div>
+    </header>
     <main>
         <div class="container mt-5">
             <div class="row justify-content-center pagesize">
