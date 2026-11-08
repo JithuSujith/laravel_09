@@ -11,6 +11,7 @@
             <div class="col-12 col-md-4">
                 <div class="card" style="width: 18rem;">
                      <div class="card-body">
+                        <img class="card-img" src="{{Storage::url($post->img)}}" alt="post image">
                          <h5 class="card-title">{{$post->title}}</h5>
                         <p class="card-text">
                             {{$post->content}}

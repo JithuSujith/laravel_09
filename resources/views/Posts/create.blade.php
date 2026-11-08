@@ -13,7 +13,7 @@
             <div class="row justify-content-center pagesize">
                 <div class="col-md-8">
 
-                    <form action="{{ route('postsave') }}" method="POST">
+                    <form action="{{ route('postsave') }}" method="POST" enctype="multipart/form-data">
                         @csrf
 
                         <div class="mb-3">
@@ -24,9 +24,25 @@
                             <input
                                 type="text"
                                 name="title"
-                                class="form-control"
+                                class="form-control @error('title') is-invalid @enderror"
                                 id="title"
                                 placeholder="Enter post title"
+                            >@error('title')
+                            <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="img" class="form-label">
+                                Post Image
+                            </label>
+
+                            <input
+                                type="file"
+                                name="img"
+                                class="form-control"
+                                id="img"
+
                             >
                         </div>
 
@@ -37,11 +53,14 @@
 
                             <textarea
                                 name="content"
-                                class="form-control"
+                                class="form-control @error('content') is-invalid @enderror"
                                 id="content"
                                 rows="5"
                                 placeholder="Write your Quote..."
                             ></textarea>
+                            @error('content')
+                            <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
                         </div>
 
                         <button type="submit" class="btn btn-primary">
